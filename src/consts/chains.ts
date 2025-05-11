@@ -32,27 +32,27 @@ export const chains: ChainMap<ChainMetadata & { mailbox?: Address }> = {
     ...sonicsvm,
     mailbox: sonicsvmAddresses.mailbox,
   },
-  // mycustomchain: {
-  //   protocol: ProtocolType.Ethereum,
-  //   chainId: 123123,
-  //   domainId: 123123,
-  //   name: 'mycustomchain',
-  //   displayName: 'My Chain',
-  //   nativeToken: { name: 'Ether', symbol: 'ETH', decimals: 18 },
-  //   rpcUrls: [{ http: 'https://mycustomchain-rpc.com' }],
-  //   blockExplorers: [
-  //     {
-  //       name: 'MyCustomScan',
-  //       url: 'https://mycustomchain-scan.com',
-  //       apiUrl: 'https://api.mycustomchain-scan.com/api',
-  //       family: ExplorerFamily.Etherscan,
-  //     },
-  //   ],
-  //   blocks: {
-  //     confirmations: 1,
-  //     reorgPeriod: 1,
-  //     estimateBlockTime: 10,
-  //   },
-  //   logoURI: '/logo.svg',
-  // },
+  mycustomchain: {
+    protocol: ProtocolType.Ethereum,
+    chainId: 123123,
+    domainId: 123123,
+    name: 'mycustomchain',
+    displayName: 'My Chain',
+    nativeToken: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    rpcUrls: [{ http: 'https://mycustomchain-rpc.com' }],
+    blockExplorers: [
+      {
+        name: 'MyCustomScan',
+        url: 'https://mycustomchain-scan.com',
+        apiUrl: 'https://api.mycustomchain-scan.com/api',
+        family: ExplorerFamily.Etherscan,
+      },
+    ],
+    blocks: {
+      confirmations: 1,
+      reorgPeriod: 1,
+      estimateBlockTime: 10,
+    },
+    logoURI: '/logo.svg',
+  },
 };
